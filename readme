@@ -1,0 +1,15 @@
+---The first python script named "pdfToExcel.py" is to be executed first to convert the given pdf data into xlsx file.---
+This Python script utilizes pdfplumber and pandas libraries to extract tables from a PDF file and save them to an Excel file.
+
+Extract Tables: The function extract_tables_from_pdf(pdf_path) reads the PDF file and extracts tables from each page.
+
+Save to Excel: The function save_tables_to_excel(tables, excel_path) saves the extracted tables to an Excel file. The script handles different table formats,including reversing text and converting percentage values.
+
+---Then the next python script named "main.py" is to be executed to convert the above xlsx file into desired format xlsx file:
+This Python script reads an Excel file, processes data, and saves the transformed data to a new Excel file.
+
+Read Excel: Utilizes pandas to read data from an Excel file into a DataFrame.
+
+Data Processing: Extracts locations and IDs, iterates over rows and columns to transform data.
+
+Save to Excel: Saves the transformed DataFrame to a new Excel file.
